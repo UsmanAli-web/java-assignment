@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <div id="tableOutput"></div>
+
+    <script>
+        const number = prompt("Enter a number:");
+        if (number) {
+            let output = `Multiplication Table for ${number}: <br>`;
+            for (let i = 1; i <= 10; i++) {
+                output += `${number} x ${i} = ${number * i} <br>`;
+            }
+            document.getElementById('tableOutput').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
